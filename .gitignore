@@ -4,3 +4,4 @@ __pycache__/
 credentials/ 
 *.json 
 data/ 
+.ipynb_checkpoints/ 
