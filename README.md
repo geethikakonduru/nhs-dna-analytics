@@ -163,27 +163,30 @@ in a high-DNA ICB:
 
 ## Repository Structure
 
+```
 nhs-dna-analytics/
 ├── notebooks/
-│ ├── 1_eda.ipynb ← Exploratory data analysis
-│ ├── 2_bigquery.ipynb ← BigQuery data loading
-│ ├── 3_ab_test.ipynb ← A/B test analysis
-│ └── 4_xgboost.ipynb ← ML model training
+│   ├── 1_eda.ipynb                ← Exploratory data analysis
+│   ├── 2_bigquery.ipynb           ← BigQuery data loading
+│   ├── 3_ab_test.ipynb            ← A/B test analysis
+│   └── 4_xgboost.ipynb            ← ML model training
 ├── sql/
-│ ├── 1_appointments.sql ← Data cleaning query
-│ ├── 2_practice_summary.sql ← Practice-level aggregation
-│ ├── 3_dna_overview.sql ← National DNA overview
-│ ├── 4_dna_by_mode.sql ← DNA rate by appointment mode
-│ ├── 5_dna_by_lead_time.sql ← DNA rate by booking lead time
-│ ├── 6_icb_comparison.sql ← ICB benchmarking with RANK
-│ └── 7_practice_outliers.sql ← Z-score outlier detection
+│   ├── 1_appointments.sql         ← Data cleaning query
+│   ├── 2_practice_summary.sql     ← Practice-level aggregation
+│   ├── 3_dna_overview.sql         ← National DNA overview
+│   ├── 4_dna_by_mode.sql          ← DNA rate by appointment mode
+│   ├── 5_dna_by_lead_time.sql     ← DNA rate by booking lead time
+│   ├── 6_icb_comparison.sql       ← ICB benchmarking with RANK
+│   └── 7_practice_outliers.sql    ← Z-score outlier detection
 ├── api/
-│ ├── main.py ← FastAPI application
-│ └── model/
-│ └── xgboost_dna.pkl ← Trained XGBoost model
-├── screenshots/ ← Dashboard and chart exports
-├── data
+│   ├── main.py                    ← FastAPI application
+│   └── model/
+│       └── xgboost_dna.pkl        ← Trained XGBoost model
+├── screenshots/                   ← Dashboard and chart exports
+├── data/
+│   └── README.md                  ← Data download instructions
 └── README.md
+```
 
 
 ---
